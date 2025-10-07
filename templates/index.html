@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Holy Spirit Home — La Maison de l'Esprit Saint</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <meta name="theme-color" content="#1B6FB5">
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar container">
+      <img src="/static/logo.png" alt="Holy Spirit logo" class="logo">
+      <nav class="nav">
+        <a href="#mission">Mission</a>
+        <a href="#prayer">Prière</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="hero-content container">
+      <h1>Bienvenue à Holy Spirit Home</h1>
+      <p class="subtitle">La Maison de l'Esprit Saint — Aller en profondeur avec l'Esprit de Dieu</p>
+      <div class="cta-row">
+        <button id="openPrayer" class="btn">Dépose ton sujet de prière</button>
+        <button id="openContact" class="btn btn-outline">Nous contacter</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="mission">
+      <h2>Notre Mission Spirituelle — Aller en Profondeur</h2>
+      <p>Notre mission est d'accompagner chaque croyant dans une relation authentique et profonde avec le Saint-Esprit. Nous croyons que la transformation véritable vient d'une communion intime avec l'Esprit de Dieu, qui nous guide, nous fortifie et nous révèle les mystères du Royaume.</p>
+    </section>
+
+    <section class="grid cards">
+      <article>
+        <h3>La Puissance du Saint-Esprit</h3>
+        <ul>
+          <li><strong>Transformation</strong> — Le Saint-Esprit transforme nos cœurs et renouvelle nos esprits.</li>
+          <li><strong>Direction</strong> — Il nous guide dans toute la vérité.</li>
+          <li><strong>Puissance</strong> — Il nous revêt de puissance d'en haut pour être témoins.</li>
+          <li><strong>Communion</strong> — Il crée une intimité profonde avec le Père.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Versets Bibliques</h3>
+        <p><strong>Actes 1:8</strong><br>« Mais vous recevrez une puissance, le Saint-Esprit survenant sur vous... »</p>
+        <p><strong>Romains 8:14</strong><br>« Car tous ceux qui sont conduits par l'Esprit de Dieu sont fils de Dieu. »</p>
+        <p><strong>Galates 5:25</strong><br>« Si nous vivons par l'Esprit, marchons aussi selon l'Esprit. »</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>L'Exemple de l'Apôtre Paul</h2>
+      <p>Paul est l'exemple d'une transformation radicale : de persécuteur à apôtre puissant. Sa vie illustre ce que signifie être conduit par l'Esprit.</p>
+    </section>
+
+    <section id="prayer" class="prayer-section">
+      <h2>Dépose Ton Sujet de Prière</h2>
+      <p>Partage ton prénom (ou reste anonyme), décris ton sujet et laisse ton email si tu veux recevoir un encouragement.</p>
+
+      <form id="prayerForm" onsubmit="return false;">
+        <div class="field"><label>Prénom / Pseudo<input type="text" name="name" id="prayer_name" placeholder="Ton prénom (ou Anonyme)"></label></div>
+        <div class="field"><label>Email (optionnel)<input type="email" name="email" id="prayer_email" placeholder="ton@email.com"></label></div>
+        <div class="field"><label>Sujet court<input type="text" name="subject" id="prayer_subject" placeholder="Titre du sujet"></label></div>
+        <div class="field"><label>Détails<textarea name="details" id="prayer_details" rows="5" placeholder="Décris ton sujet de prière..."></textarea></label></div>
+
+        <div class="form-actions">
+          <button class="btn" id="sendPrayer">Soumettre une prière</button>
+          <span id="prayerMsg" class="msg"></span>
+        </div>
+      </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contactez-Nous</h2>
+      <p>Holy Spirit Home — Yamoussoukro, Côte d'Ivoire</p>
+      <p>Téléphone : <a href="tel:+2250705565174">+225 07 05 56 51 74</a></p>
+
+      <form id="contactForm" onsubmit="return false;">
+        <div class="field"><label>Prénom<input type="text" name="name" id="contact_name" placeholder="Ton prénom"></label></div>
+        <div class="field"><label>Email<input type="email" name="email" id="contact_email" placeholder="ton@email.com"></label></div>
+        <div class="field"><label>Message<textarea name="message" id="contact_message" rows="4" placeholder="Ton message..."></textarea></label></div>
+
+        <div class="form-actions">
+          <button class="btn btn-outline" id="sendContact">Envoyer</button>
+          <span id="contactMsg" class="msg"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="resources">
+      <h2>Ressources spirituelles recommandées</h2>
+      <ul>
+        <li>Danger Spirituel — Dag Heward-Mills</li>
+        <li>Bonne Matinée avec le Saint-Esprit — Benny Hinn</li>
+        <li>Les Actes du Saint-Esprit — T.L. Osborn</li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <h2>Témoignages</h2>
+      <blockquote>« J'étais dans une profonde dépression... » — Marie K., Yamoussoukro</blockquote>
+      <blockquote>« Le Saint-Esprit m'a délivré... » — Jean-Paul D., Abidjan</blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2024 Holy Spirit Home - La Maison de l'Esprit Saint. Fondateur : Serviteur Topesonn // Goïta Tope Retsin</p>
+    </div>
+  </footer>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
