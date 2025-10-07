@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: holy-spirithome
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: MAIL_HOST
+        value: smtp.gmail.com
+      - key: MAIL_PORT
+        value: "587"
+      - key: MAIL_USERNAME
+        # value: set this in Render dashboard (do not commit)
+        value: ""
+      - key: MAIL_PASSWORD
+        # value: set this in Render dashboard (do not commit)
+        value: ""
+      - key: RECEIVER_EMAIL
+        # value: set this in Render dashboard (do not commit)
+        value: ""
+      - key: SECRET_KEY
+        value: "change-me"
